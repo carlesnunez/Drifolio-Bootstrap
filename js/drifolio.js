@@ -113,7 +113,7 @@ width = $("#hero").width();
 height = $("#hero").height();
 canvas.width = width;
 canvas.height = height;
-var drawGrid = () => {
+var drawGrid = function() {
   ctx.clearRect(0, 0, width, height);
   
   for (var i = 0, l = pixels.length; i < l; i++) {
@@ -143,7 +143,7 @@ var drawGrid = () => {
   }
 }
 
-var resize = () => {
+var resize = function() {
   width = $("#hero").width();
   height = $("#hero").height();
   canvas.width = width;
@@ -156,14 +156,14 @@ var resize = () => {
   }
 }
 
-var draw = () => {
+var draw = function() {
   launchPixel();
   launchPixel();
   drawGrid();
   requestAnimationFrame(draw);
 }
 
-var initColoredPixels = () => {
+var initColoredPixels = function() {
   for (var i = 0; i < 300; i++) {
     coloredPixels.push({
       x: width/2,
@@ -176,7 +176,7 @@ var initColoredPixels = () => {
   }
 }
 
-var launchPixel = () => {
+var launchPixel = function() {
   coloredPixels[currentPixel].x = mousePosition.x;
   coloredPixels[currentPixel].y = mousePosition.y;
   coloredPixels[currentPixel].alpha = 1;
@@ -195,7 +195,7 @@ window.addEventListener('mousemove', function(e) {
   mousePosition.y = e.pageY;
 })
 
-var touchMove = (e) => {
+var touchMove = function(e) {
   //e.preventDefault();
   mousePosition.x = e.touches[0].pageX;
   mousePosition.y = e.touches[0].pageY;
