@@ -100,20 +100,20 @@ $('#services img').hover(
        function(){ $(this).removeClass('animated pulse') })
        
 $(document).ready(function(){
-  let width, height;
-let pixels = [];
-let coloredPixels = [];
-let colors = ['#540045', '#C60052', '#FF714B', '#EAFF87', '#ACFFE9'];
-let currentPixel = 0;
-const mousePosition = { x: window.innerWidth/2, y: window.innerHeight/2 };
+  var width, height;
+var pixels = [];
+var coloredPixels = [];
+var colors = ['#540045', '#C60052', '#FF714B', '#EAFF87', '#ACFFE9'];
+var currentPixel = 0;
+var mousePosition = { x: window.innerWidth/2, y: window.innerHeight/2 };
 
-const canvas = $('#hero-canvas')[0];
-const ctx = canvas.getContext('2d');
+var canvas = $('#hero-canvas')[0];
+var ctx = canvas.getContext('2d');
 width = $("#hero").width();
 height = $("#hero").height();
 canvas.width = width;
 canvas.height = height;
-const drawGrid = () => {
+var drawGrid = () => {
   ctx.clearRect(0, 0, width, height);
   
   for (var i = 0, l = pixels.length; i < l; i++) {
@@ -143,7 +143,7 @@ const drawGrid = () => {
   }
 }
 
-const resize = () => {
+var resize = () => {
   width = $("#hero").width();
   height = $("#hero").height();
   canvas.width = width;
@@ -156,14 +156,14 @@ const resize = () => {
   }
 }
 
-const draw = () => {
+var draw = () => {
   launchPixel();
   launchPixel();
   drawGrid();
   requestAnimationFrame(draw);
 }
 
-const initColoredPixels = () => {
+var initColoredPixels = () => {
   for (var i = 0; i < 300; i++) {
     coloredPixels.push({
       x: width/2,
@@ -176,7 +176,7 @@ const initColoredPixels = () => {
   }
 }
 
-const launchPixel = () => {
+var launchPixel = () => {
   coloredPixels[currentPixel].x = mousePosition.x;
   coloredPixels[currentPixel].y = mousePosition.y;
   coloredPixels[currentPixel].alpha = 1;
@@ -195,7 +195,7 @@ window.addEventListener('mousemove', function(e) {
   mousePosition.y = e.pageY;
 })
 
-const touchMove = (e) => {
+var touchMove = (e) => {
   //e.preventDefault();
   mousePosition.x = e.touches[0].pageX;
   mousePosition.y = e.touches[0].pageY;
