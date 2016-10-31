@@ -196,11 +196,11 @@ window.addEventListener('mousemove', function(e) {
 })
 
 const touchMove = (e) => {
-  e.preventDefault();
+  //e.preventDefault();
   mousePosition.x = e.touches[0].pageX;
   mousePosition.y = e.touches[0].pageY;
 }
 
 document.addEventListener('touchstart', touchMove);
-//document.addEventListener('touchmove', touchMove);
+document.addEventListener('touchmove', touchMove);
 });
