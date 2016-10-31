@@ -201,6 +201,6 @@ const touchMove = (e) => {
   mousePosition.y = e.touches[0].pageY;
 }
 
-document.addEventListener('touchstart', touchMove);
-document.addEventListener('touchmove', touchMove);
+//document.addEventListener('touchstart', touchMove);
+//document.addEventListener('touchmove', touchMove);
 });
