@@ -201,6 +201,6 @@ const touchMove = (e) => {
   mousePosition.y = e.touches[0].pageY;
 }
 
-document.addEventListener('touchstart', touchMove);
-document.addEventListener('touchmove', touchMove);
+$("#hero-canvas").on('touchstart', touchMove);
+$("#hero-canvas").on('touchmove', touchMove);
 });
