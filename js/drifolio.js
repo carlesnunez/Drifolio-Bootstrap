@@ -32,13 +32,13 @@ $(window).load(function() { // makes sure the whole site is loaded
 //========================
 //CUSTOM SCROLLBAR
 //========================
-$("html").niceScroll({
-    mousescrollstep: 70,
-    cursorcolor: "#ea9312",
-    cursorwidth: "5px",
-    cursorborderradius: "10px",
-    cursorborder: "none",
-});
+// $("html").niceScroll({
+//     mousescrollstep: 70,
+//     cursorcolor: "#ea9312",
+//     cursorwidth: "5px",
+//     cursorborderradius: "10px",
+//     cursorborder: "none",
+// });
 
 
 //========================
@@ -79,7 +79,7 @@ $(function() {
                 .removeClass('animated fadeOutUp')
                 .addClass('animated fadeInDown')
                 .fadeIn();
-                
+
             } else {
                 $('.navbar')
                 .removeClass('animated fadeInDown')
@@ -98,7 +98,7 @@ $(function() {
 $('#services img').hover(
        function(){ $(this).addClass('animated pulse') },
        function(){ $(this).removeClass('animated pulse') })
-       
+
 $(document).ready(function(){
   var width, height;
 var pixels = [];
@@ -115,24 +115,24 @@ canvas.width = width;
 canvas.height = height;
 var drawGrid = function() {
   ctx.clearRect(0, 0, width, height);
-  
+
   for (var i = 0, l = pixels.length; i < l; i++) {
     pixels[i][4] = 0;
   }
-  
+
   for (var i = 0, l = coloredPixels.length; i < l; i++) {
     var pix = Math.floor(coloredPixels[i].y/10)*(Math.floor(width/10)+1) + Math.floor(coloredPixels[i].x/10);
     if (pixels[pix]) {
       pixels[pix][4] = coloredPixels[i].color;
       pixels[pix][5] = coloredPixels[i].alpha;
     }
-    
+
     if (coloredPixels[i].alpha > 0) coloredPixels[i].alpha -= 0.008;
     if (coloredPixels[i].alpha < 0) coloredPixels[i].alpha = 0;
     coloredPixels[i].x += coloredPixels[i].vx;
     coloredPixels[i].y += coloredPixels[i].vy;
   }
-  
+
   for (var i = 0, l = pixels.length; i < l; i++) {
     ctx.globalAlpha = 1;
     ctx.fillStyle = '#222';
@@ -180,7 +180,7 @@ var launchPixel = function() {
   coloredPixels[currentPixel].x = mousePosition.x;
   coloredPixels[currentPixel].y = mousePosition.y;
   coloredPixels[currentPixel].alpha = 1;
-  
+
   currentPixel++;
   if (currentPixel > 299) currentPixel = 0;
 }
