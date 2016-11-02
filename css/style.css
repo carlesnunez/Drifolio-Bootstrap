@@ -97,9 +97,9 @@ HERO AREA
   max-width: 900px;
 }
 .heroshot{
-  margin-top: 20px;
+  opacity:0.9;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 
 }
 
