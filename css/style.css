@@ -43,6 +43,13 @@ ul{padding: 0;}
 a{color: #ea9312}
 a:hover{color: #c3c3c3; text-decoration: none;}
 
+
+.quote a {
+  color: #c3c3c3;
+}
+.quote a:hover {
+  color: #ea9312;
+}
 #services{text-align: center;}
 .col-md-4, .col-md-6{padding-bottom: 50px;}
 .col-md-3 {padding: 0;}
