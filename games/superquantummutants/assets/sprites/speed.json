@@ -1,0 +1,30 @@
+{"frames": {
+
+"speed1.png":
+{
+	"frame": {"x":0,"y":0,"w":45,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":45},
+	"sourceSize": {"w":45,"h":45},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"speed2.png":
+{
+	"frame": {"x":45,"y":0,"w":45,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":45},
+	"sourceSize": {"w":45,"h":45},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "speed.png",
+	"format": "RGBA8888",
+	"size": {"w":90,"h":45},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ac83014cd8222faa4a321ed68f7de0a9:21416160bf9b59329463c25dcf541dc3:a39fec90bfa69f5c742628dcf550ec41$"
+}
+}

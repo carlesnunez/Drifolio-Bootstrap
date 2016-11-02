@@ -1,0 +1,30 @@
+{"frames": {
+
+"weap_dmg1.png":
+{
+	"frame": {"x":0,"y":0,"w":45,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":45},
+	"sourceSize": {"w":45,"h":45},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"weap_dmg2.png":
+{
+	"frame": {"x":45,"y":0,"w":45,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":45},
+	"sourceSize": {"w":45,"h":45},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "weap_dmg.png",
+	"format": "RGBA8888",
+	"size": {"w":90,"h":45},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:129e97dd53eee96cc7d49dc6c8130f98:4fca19d99e3298d91cabde64dc18fd03:2758cb168a152314e1c5843acd93156a$"
+}
+}
