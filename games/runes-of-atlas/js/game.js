@@ -223,7 +223,7 @@ module.exports = [
             [0,0,0,0],
             [['2', 0, 0, 3, 0],0,0,['2', 1, 0, 0, 0]]
         ],
-        minSteps: 4,
+        minSteps: 8,
         maxSteps: 16,
         stars: '0',
         blocked: true
@@ -235,7 +235,7 @@ module.exports = [
             [['2', 0, 1, 0, 0],0,['3', 1, 2, 0, 0],0],
             [0,0,0,0]
         ],
-        minSteps: 9,
+        minSteps: 11,
         maxSteps: 12,
         stars: '0',
         blocked: true
@@ -248,18 +248,6 @@ module.exports = [
             [0,0,0,0]
         ],
         minSteps: 7,
-        maxSteps: 10,
-        stars: '0',
-        blocked: true
-    },
-    {
-        grid: [
-            [['1', 3, 1, 0, 0],['1', 0, 3, 2, 0],['1', 2, 1, 3, 0],['1', 0, 0, 2, 3]],
-            [0,['1', 1, 0, 0, 1],0,['1', 2, 0, 1, 1]],
-            [0,0,0,0],
-            [0,0,0,0]
-        ],
-        minSteps: 8,
         maxSteps: 10,
         stars: '0',
         blocked: true
@@ -317,7 +305,7 @@ module.exports = {
         width: 170,
         height: 170,
         text: {
-            x: 95,
+            x: 86,
             y: 70,
             anchorX: 0.5,
             anchorY: 0.5
@@ -1862,6 +1850,7 @@ Play.prototype = {
 
     create: function create() {
         //Game Background
+        gameData.steps = 0;
         this.gameBG = this.game.add.sprite(0, 0, 'gameBg');
         this.grid = new Grid(4, 4, levelDefinition[gameData.currentLevel], this.game);
         this.gameOver = new GameOver(this.game);
