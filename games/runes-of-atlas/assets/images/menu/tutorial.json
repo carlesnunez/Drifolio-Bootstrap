@@ -1,0 +1,48 @@
+{"frames": {
+
+"tutorial_01":
+{
+	"frame": {"x":0,"y":0,"w":390,"h":410},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":410},
+	"sourceSize": {"w":390,"h":410},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"tutorial_02":
+{
+	"frame": {"x":390,"y":0,"w":390,"h":410},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":410},
+	"sourceSize": {"w":390,"h":410},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"tutorial_03":
+{
+	"frame": {"x":0,"y":410,"w":390,"h":410},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":410},
+	"sourceSize": {"w":390,"h":410},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"tutorial_04":
+{
+	"frame": {"x":390,"y":410,"w":390,"h":410},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":410},
+	"sourceSize": {"w":390,"h":410},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ui-buttons",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c98c6b7575a66a8b83b04e826d19cd8e:d5a73202665df150f55dc6f8af8c54ba:21eef1203b523f437bedfb3dc6ac9328$"
+}
+}
