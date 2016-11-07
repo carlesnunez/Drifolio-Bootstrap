@@ -26,23 +26,6 @@ body {
     src: url('assets/fonts/movesFont.ttf');
 }
 </style>
-<script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-  crossorigin="anonymous"></script>
-<script>
-$(function(){
-    var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width; //get proper width
-    var mw = 460; // AQUI VA LA UNIDAD PARA LA QUE ESTA MAQUETADA LA WEB 460PX?
-    var ratio =  (ww / mw); //calculate ratio
-    var reducedRatio = ratio;
-    //if( ww < mw){ //smaller than minimum size
-      $('meta[name="viewport"]').attr('content', 'initial-scale=' + reducedRatio + ', user-scalable=yes, width=460');
-    //}else{ //regular size
-    //  $('meta[name="viewport"]').attr('content', 'initial-scale=1.0, user-scalable=yes');
-    //}
-});
-</script>
 <body>
     <div style="font-family: movesFont;height:0px;">0</div>
     <div id="canvas-wrapper"></div>

@@ -107,30 +107,30 @@ module.exports = {
 
 },{}],7:[function(require,module,exports){
 /**
- * The level data structure is created as follows:
- *
- * Grid: grid contains an a bidimensional array(X,Y) that can contains the follow:
- *  1- 0 (theres no piece on that position).
- *  2- Array - If there's a piece on that position we should put an array of 5 positions. Each position corresponds to the next:
- *    [<type-of-pice>:String, <top-side>:int, <right-side>:int, <bottom-side>:int, <left-side>:int]
- *  For example:
- *    ['1', 1, 0, 0, 0] - That will correspond to a piece type draggable with only one pin on the top side.
- *                                    0
- *                               -----------
- *                              |           |
- *                           3  |   Block   |  1
- *                              |   piece   |
- *                              |           |
- *                               -----------
- *                                    2
- * Stars: The stars that we reach on that level
- * Blocked: If the level has not played yet
- * @param
- * @returns
- */
+* The level data structure is created as follows:
+*
+* Grid: grid contains an a bidimensional array(X,Y) that can contains the follow:
+*  1- 0 (theres no piece on that position).
+*  2- Array - If there's a piece on that position we should put an array of 5 positions. Each position corresponds to the next:
+*    [<type-of-pice>:String, <top-side>:int, <right-side>:int, <bottom-side>:int, <left-side>:int]
+*  For example:
+*    ['1', 1, 0, 0, 0] - That will correspond to a piece type draggable with only one pin on the top side.
+*                                    0
+*                               -----------
+*                              |           |
+*                           3  |   Block   |  1
+*                              |   piece   |
+*                              |           |
+*                               -----------
+*                                    2
+* Stars: The stars that we reach on that level
+* Blocked: If the level has not played yet
+* @param
+* @returns
+*/
 
 module.exports = [
-//1
+    //1
     {
         grid: [
             [0,0,0,0],
@@ -327,6 +327,33 @@ module.exports = [
         maxSteps: 16,
         stars: '0',
         blocked: true
+    },
+    //16
+    {
+        grid: [
+            [0,['2', 0,0,0,2],['2', 1,2,0,0],['3', 0,0,1,3]],
+            [['2', 1,2,0,0],['2', 2,1,2,0],['3', 1,2,0,0],['2',0,1,0,0]],
+            [0,['3', 0,0,2,1],['2', 1,3,0,2],['2', 0,0,2,1]],
+            [0,['3', 0,1,0,0],0,['2', 0,0,0,2]]
+        ],
+        minSteps: 17,
+        maxSteps: 21,
+        stars: '0',
+        blocked: true
+    },
+    //17
+    //16
+    {
+        grid: [
+            [0,0,0,0],
+            [0,['3', 0, 2, 1, 0],['3', 1,0,0,2],0],
+            [0,['2', 0, 1, 2, 0],['3', 1,2,0,0],0],
+            [0,0,0,0]
+        ],
+        minSteps: 8,
+        maxSteps: 9,
+        stars: '0',
+        blocked: true
     }
 
 ];
@@ -496,7 +523,7 @@ window.onload = function () {
       height = DESING_HEIGHT;
   }
 
-  game = new Phaser.Game(DESING_WIDTH, DESING_HEIGHT, Phaser.AUTO);
+  game = new Phaser.Game(width, height, Phaser.AUTO);
 
   game.gameData = gameData || {};
 
