@@ -496,7 +496,7 @@ window.onload = function () {
       height = DESING_HEIGHT;
   }
 
-  game = new Phaser.Game(width, height, Phaser.AUTO);
+  game = new Phaser.Game(DESING_WIDTH, DESING_HEIGHT, Phaser.AUTO);
 
   game.gameData = gameData || {};
 
